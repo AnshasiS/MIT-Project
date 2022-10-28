@@ -1,0 +1,54 @@
+.one {
+    
+    height: 586px;
+
+    .overImage{
+        
+        position: absolute;
+        top: 15%;
+        font-size: 20pt;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        margin-left: 50px;
+    }
+        .highlight  {
+
+            background-color: white;
+            color: black;
+            padding: 0;
+
+        }
+    
+   
+
+
+}
+
+
+.two {
+    background-color:white;
+    height: 150px;
+    
+}
+
+
+
+
+@import './src/my-theme.scss';
+@import '~@angular/material/theming';
+@mixin corporateIdTextColor($theme) {
+    $config: mat-get-color-config($theme);
+    $myprimary: map-get($config, primary);
+    $myaccent: map-get($config, accent);
+    $mywarn: map-get($config, warn);
+    p.mat-display-1, p.mat-subheading-2, span.highlight {
+        color: mat-color($myprimary);
+    }
+
+
+}
+
+div.two, div.overImage{
+     @include corporateIdTextColor($theme); 
+}
+

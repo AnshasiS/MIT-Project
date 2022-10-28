@@ -1,0 +1,106 @@
+@import '~@angular/material/theming';
+@import url("https://fonts.googleapis.com/css?family=Saira");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap");
+@import './assets/mypalette.scss';
+
+
+@include mat-core();
+
+// color configurations
+$primary : mat-palette($md-mypalette, 50);
+$accent : mat-palette($md-mypalette, 100);
+$warn :  mat-palette($md-mypalette, 200);
+$theme : mat-light-theme($primary, $accent, $warn);
+
+
+
+// typography configurations
+$custom-typography: mat-typography-config(
+$font-family :'Saira',
+$headline: mat-typography-level(24px, 32px, 400),
+$title: mat-typography-level(24px, 30px, 400),
+$display-4: mat-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+$display-3: mat-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+$display-2: mat-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+$display-1: mat-typography-level(34px, 40px, 400),  
+$subheading-2: mat-typography-level(16px, 14px, 400),
+$subheading-1: mat-typography-level(14px, 40px, 400),
+$body-2: mat-typography-level(14px, 20px, 500),   // 1.428571429= fontsize divided by line height
+$body-1: mat-typography-level(14px, 20px, 400),
+$caption: mat-typography-level(12px, 20px, 400),
+$button: mat-typography-level(14px, 14px, 500),
+// Line-height must be unit-less fraction of the font-size.
+$input:  mat-typography-level(inherit, 1.125, 400)
+
+);
+
+//The default Angular material theme for mat-tabs and mat-buttons have been overridden by the newly created theme.
+// overriding default typography and themes
+//The default Angular material typography for components texts and HTML text tags has been overridden by the newly created typography.
+@include angular-material-typography($custom-typography); 
+//The default Angular material theme for mat-tabs and mat-buttons have been overridden by the newly created theme.
+@include mat-tabs-theme($theme);
+@include mat-button-theme($theme)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// another way of defining themes
+// (color: (
+       // primary: $primary,
+     //   accent:$accent
+  //  )
+//)
+  // overrides the defaults theme
+ // @include angular-material-theme($theme); 
+
+// @mixin corporateIdTextColor($theme) {
+//     $config: mat-get-color-config($theme);
+//     $myprimary: map-get($config, primary);
+//     $myaccent: map-get($config, accent);
+//     p {
+//         color: mat-color($myprimary, default-contrast);
+//     }
+
+// }
+
+
+
+
+//,'Verdana'
+//'Filmotype Havanna'
+//'Orator_Std_Medium'
+
+
+
+ 
+ 
+// overriding typography only for text
+//@include mat-base-typography($custom-typography);
+
+//for font change in components as well as mat-body-1, etc
+
+
+
+// you can override for a specific component as well
+
+
+/* For use in src/lib/core/theming/_palette.scss */
+
+
+
+
+

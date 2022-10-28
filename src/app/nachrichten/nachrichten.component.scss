@@ -1,0 +1,43 @@
+
+
+.card {
+    
+    max-height: 150px;
+   
+}
+span.setEnd {
+    
+    float:right;
+}
+
+
+.center {
+    margin-left: 5%;
+    margin-right: 5%;
+   
+}
+@import './src/my-theme.scss';
+@import '~@angular/material/theming';
+@mixin corporateIdTextColor($theme) {
+    $config: mat-get-color-config($theme);
+    $myprimary: map-get($config, primary);
+    $myaccent: map-get($config, accent);
+    $mywarn: map-get($config, warn); 
+    p,span {
+        color: mat-color($mywarn);
+    }
+    p.mat-display-1 {
+        color: mat-color($myprimary);
+    }
+
+}
+
+div.center {
+     @include corporateIdTextColor($theme);  
+}
+
+
+button.mat-raised-button{
+    color: white !important;
+  }  
+

@@ -1,0 +1,42 @@
+
+
+
+table {
+    width: 90%;
+    margin-left:5%;
+    margin-right:5%;
+   
+  }
+
+@import './src/my-theme.scss';
+@import '~@angular/material/theming';
+
+@mixin corporateIdTextColor($theme) {
+    $config: mat-get-color-config($theme);
+    $myprimary: map-get($config, primary);
+    $myaccent: map-get($config, accent);
+    $mywarn: map-get($config, warn);
+    mat-paginator{
+        color: mat-color($mywarn);
+    }
+
+}
+
+div {
+     @include corporateIdTextColor($theme); 
+}
+
+
+
+.colorprimary {
+    background-color: #009fe3;
+    
+}
+.colorwarn {
+    background-color: #1a4273;
+}
+
+
+mat-form-field{
+    width:400px;  
+  }

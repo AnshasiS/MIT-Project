@@ -1,0 +1,30 @@
+@import './src/my-theme.scss';
+@import '~@angular/material/theming';
+@mixin corporateIdTextColor($theme) {
+    $config: mat-get-color-config($theme);
+    $myprimary: map-get($config, primary);
+    $myaccent: map-get($config, accent);
+    $mywarn: map-get($config, warn); 
+    mat-panel-description, mat-panel-title, p  {
+        color: mat-color($mywarn);  
+    }
+    p.mat-display-1 {
+        color: mat-color($myprimary);
+    }
+}
+section {
+    @include corporateIdTextColor($theme);  
+}
+
+
+
+ mat-icon {
+    margin-right: 0.1em;
+    margin-left: 0.2em;
+}
+
+.center {
+    margin-left: 5%;
+    margin-right: 5%;
+   
+}

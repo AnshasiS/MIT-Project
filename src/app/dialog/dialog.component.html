@@ -1,0 +1,14 @@
+<div>
+<h1  *ngIf = "(data.name == 'authenticate')">{{"dialog-1" | translate}}  </h1>
+
+<h1 *ngIf = "(data.name == 'signup successful')">{{"dialog-2" | translate}}</h1>
+
+<h1  *ngIf = "(data.name == 'signup failed')">{{"dialog-3" | translate}}</h1>
+
+<h1  *ngIf = "(data.name == 'no room match')">{{"dialog-4-1" | translate}} {{data.roomQR.room}} {{"dialog-4-2" | translate}}  {{data.roomQR.building}}, {{data.roomQR.floor}} {{"dialog-4-3" | translate}} {{data.roomSet.room}} {{"dialog-4-4" | translate}} {{data.roomSet.building}}, {{data.roomSet.floor}} {{"dialog-4-5" | translate}}</h1>
+
+<h1  *ngIf = "(data.name == 'room match')">{{"dialog-5" | translate}} </h1>
+
+<button mat-raised-button  color="accent" [mat-dialog-close] = "true"> Ok </button>
+</div>
+

@@ -1,0 +1,18 @@
+button {
+    color: white !important;
+}
+
+@import './src/my-theme.scss';
+@import '~@angular/material/theming';
+@mixin corporateIdTextColor($theme) {
+    $config: mat-get-color-config($theme);
+    $myprimary: map-get($config, primary);
+    $myaccent: map-get($config, accent);
+    $mywarn: map-get($config, warn);
+    h1  {
+        color: mat-color($mywarn);
+    }
+}
+div {
+    @include corporateIdTextColor($theme);   
+}

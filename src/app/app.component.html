@@ -1,0 +1,67 @@
+
+
+
+
+<body>
+
+  <header> 
+    <app-navbar class= "sticky"></app-navbar>
+  </header>
+
+      <mat-sidenav-container>
+          <mat-sidenav mode = "side" [(opened)]= "state">
+            <mat-nav-list>
+              <a mat-list-item routerLink= "/"  >Home</a>
+              <a mat-list-item routerLink= "/nachricht"   >{{"news" | translate}}</a>
+              <a mat-list-item  routerLink= "/event"  > {{'events' | translate}} </a>
+              <a mat-list-item routerLink= "/navig" > {{'navigation' | translate}}</a> 
+              <a mat-list-item routerLink= "/info"   > Info</a> 
+              <a mat-list-item *ngIf="!userIsAuthenticated"routerLink= "/login" ><mat-icon>person_outline</mat-icon> {{"login" | translate}}</a>
+              <div><a mat-list-item *ngIf="userIsAuthenticated" (click)= "onLogout()"><mat-icon>person_outline</mat-icon> <span>{{"logout" | translate}}</span></a> </div>
+            </mat-nav-list>
+          </mat-sidenav>
+
+        <mat-menu #submenu ="matMenu"> 
+          <a mat-menu-item   routerLink= "/news" target="_blank" > Exam Rooms </a>
+          <a mat-menu-item  routerLink= "/news" target="_blank" > Free Rooms </a>
+          <a mat-menu-item  routerLink= "/news" target="_blank" > MENSA </a>
+          <a mat-menu-item  routerLink= "/news" target="_blank" > LECTURE PLAN </a>
+        </mat-menu>
+        <mat-sidenav-content>
+      
+          <app-header></app-header>
+          <router-outlet ></router-outlet>
+      
+        
+
+
+          <footer> 
+           <app-footer></app-footer>
+          </footer>
+        </mat-sidenav-content> 
+      </mat-sidenav-container>
+  
+</body>
+
+
+
+
+
+
+
+
+
+
+<div class="cont">
+    <div class="row">
+        <div class="col-md-6">
+
+    
+    
+    
+        </div>
+    </div>
+</div> 
+    
+
+

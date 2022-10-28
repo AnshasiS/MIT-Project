@@ -1,0 +1,65 @@
+
+    <div>
+        <mat-form-field>
+            <input matInput type= "text" placeholder="filter" (keyup)= "filter($event.target.value)">  
+        </mat-form-field>
+        <table mat-table  [dataSource]= "dataSource" class="mat-elevation-z8" >
+            <ng-container matColumnDef = "day">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header [style.color]="'white'">{{"mensa-table-day" | translate}}</th>
+                <td mat-cell *matCellDef = " let element" [style.color]="'white'"> {{ element.day }}</td>
+                
+            </ng-container>
+            <ng-container matColumnDef = "mainPlate">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header [style.color]="'white'">{{"mensa-table-mainPlate" | translate}}</th>
+                <td mat-cell *matCellDef = " let element" [style.color]="'white'"> {{ element.mainPlate }}</td>
+                
+            </ng-container>
+            <ng-container matColumnDef = "salad">
+                <th mat-header-cell *matHeaderCellDef [style.color]="'white'">{{"mensa-table-salad" | translate}}</th>
+                <td mat-cell *matCellDef = " let element" [style.color]="'white'"> {{ element.salad}}</td>
+                
+            </ng-container>
+            <ng-container matColumnDef = "drinks">
+                <th mat-header-cell *matHeaderCellDef [style.color]="'white'">{{"mensa-table-drinks" | translate}}</th>
+                <td mat-cell *matCellDef = " let element" [style.color]="'white'"> {{ element.drinks}}</td>
+                
+            </ng-container>
+
+            <ng-container matColumnDef = "price">
+                <th mat-header-cell *matHeaderCellDef [style.color]="'white'">{{"mensa-table-price" | translate}}</th>
+                <td mat-cell *matCellDef = " let element" [style.color]="'white'"> {{ element.price}}</td>
+                
+            </ng-container>
+            <ng-container matColumnDef = "openingTime">
+                <th mat-header-cell *matHeaderCellDef [style.color]="'white'">{{"mensa-table-openingTime" | translate}}</th>
+                <td mat-cell *matCellDef = " let element" [style.color]="'white'"> {{ element.openingTime}}</td>
+                
+            </ng-container>
+            <ng-container matColumnDef = "closingTime">
+                <th mat-header-cell *matHeaderCellDef [style.color]="'white'">{{"mensa-table-closingTime" | translate}}</th>
+                <td mat-cell *matCellDef = " let element" [style.color]="'white'">  {{ element.closingTime}}</td>
+                
+            </ng-container>
+            
+            <tr mat-header-row *matHeaderRowDef = "displayedColumns" [ngClass]="{colorwarn:displayedColumns}"></tr>
+            <!-- choose which columns to be displayed -->
+            <tr mat-row *matRowDef = "let Row; columns: displayedColumns;" [ngClass]="{colorprimary:Row}"></tr>    
+    
+    
+        </table>
+        <mat-paginator [pageSize] = "8" [pageSizeOptions]= "[5, 8]">
+    
+        </mat-paginator>
+    </div>
+                        
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    

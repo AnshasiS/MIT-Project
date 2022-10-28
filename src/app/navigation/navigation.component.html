@@ -1,0 +1,27 @@
+<form ngForm #navigform="ngForm"  >
+<div class = "six"  fxLayout="column" fxLayoutAlign= "top center">  
+    <p class= "mat-display-2"> Campus Navigation </p> 
+    
+
+    <mat-form-field floatLabel= "always" appearance= "outline" >
+        
+        <mat-label class="mat-button"> {{"navig-page-form" | translate}}</mat-label>
+        
+        <mat-select  required placeholder = "{{'navig-page-placeholder' | translate}}" (selectionChange) = "this.fetchSelectedRoom($event.value)"class="mat-button" #errorRoom= "ngModel" ngModel  name=selectedRoom>
+            <mat-option   *ngFor= "let room of rooms" [value]= "room"> {{room}} </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <span>
+        <button mat-raised-button  matTooltip="{{'navig-page-QR-tooltip' | translate}}"  color="accent" (click) = "this.fetchQRroom()"><mat-icon >qr_code_scanner</mat-icon>  </button>
+        <button mat-raised-button color="accent" type="button" id="enable" matTooltip="{{'navig-page-navigate-tooltip' | translate}}" (click) ="this.makeMarker(this.map) " [disabled]= "enabled || navigform.invalid" > <mat-icon>navigation</mat-icon> </button>
+        <button mat-raised-button color="accent" (click) = "clearMarkers()" [disabled]= "enabledClear" >  {{"navig-page-clearMarker-button" | translate}}</button>
+    </span>
+</div>
+</form>
+
+
+<div class = "map-container">
+    <div class="map-frame">
+        <div id="map">  </div>
+    </div>
+</div>

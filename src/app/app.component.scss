@@ -1,0 +1,44 @@
+
+mat-sidenav-container {
+
+    
+    background-color: white;
+    
+   
+   
+   
+}
+
+sidenav-content {
+
+    position:fixed;
+   
+}
+mat-sidenav{
+
+        position: fixed;
+        width : 200px;
+        background-color: #009fe3;
+        top: 80px;
+
+}
+
+.sticky {
+
+    position: fixed;
+    top:0;
+    overflow:hidden;
+    z-index: 2;
+    width:100%;
+    opacity: 0.95;
+
+
+ }
+
+ app-map {
+     height: 400px;
+ }
+
+ a, button {
+    color: white !important;
+}

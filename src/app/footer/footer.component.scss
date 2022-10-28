@@ -1,0 +1,20 @@
+.seven {
+    background-color: white;
+    height: 100px;
+}
+
+@import './src/my-theme.scss';
+@import '~@angular/material/theming';
+@mixin corporateIdTextColor($theme) {
+    $config: mat-get-color-config($theme);
+    $myprimary: map-get($config, primary);
+    $myaccent: map-get($config, accent);
+    $mywarn: map-get($config, warn); 
+    div  {
+        color: mat-color($mywarn);  
+    }
+    
+}
+div.seven {
+    @include corporateIdTextColor($theme);  
+}

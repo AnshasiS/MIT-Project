@@ -1,0 +1,46 @@
+
+
+
+<div class = "six">  
+        <p class= "mat-display-3" id = "padding">{{"login-page-header" | translate}}</p>
+    <form ngForm #loginform="ngForm"  (ngSubmit)="onSubmit(loginform)"  fxLayout="column" fxLayoutAlign= "center center" >
+            <mat-form-field  floatLabel= "always" appearance= "outline" >   
+                <mat-label>{{"name" | translate}}</mat-label>
+                <input matInput required  #erroruser = "ngModel" pattern = [A-Za-z]{8,}    name = "Name" [(ngModel)]= "this.service.user.Name"> 
+                <mat-hint align="end">{{"username-hint" | translate}}</mat-hint>   
+                <mat-error *ngIf = "erroruser.invalid && erroruser.touched"> {{"login-fill-error-username" | translate}}</mat-error>
+                <mat-error *ngIf = "erroruser.untouched"> Input required</mat-error>          
+            </mat-form-field >
+
+            <mat-form-field  floatLabel= "always" appearance= "outline">  
+                <mat-label>{{"email" | translate}}</mat-label>
+                <input matInput required pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{3,}$" #erroremail = "ngModel" [(ngModel)] ="this.service.user.email"  name = "email"> 
+                <mat-error *ngIf = "erroremail.invalid && erroremail.touched"> {{"login-fill-error-email" | translate}}</mat-error>
+                <mat-error *ngIf = "erroremail.untouched"> Input required</mat-error>
+            </mat-form-field>
+
+            <mat-form-field floatLabel= "always" appearance= "outline">
+                <mat-label>{{"password" | translate}}</mat-label>
+                <input matInput required type = "password"  pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" #errorpassword = "ngModel" [(ngModel)] ="this.service.user.password" name = "password"> 
+                <mat-hint align="end">{{"password-hint" | translate}}</mat-hint>
+                <mat-error *ngIf = "errorpassword.invalid && errorpassword.touched"> {{"login-fill-error-password" | translate}}</mat-error>
+                <mat-error *ngIf = "errorpassword.untouched"> Input required</mat-error>
+            </mat-form-field>
+            
+            
+        
+            
+            <span>
+                <button mat-raised-button color="accent" type="submit" name = "action" value= "login" [disabled]= "loginform.invalid" (click)="selectButton()"> {{"login" | translate}} </button>
+                <button mat-raised-button  color="accent" type="submit" name = "action" value= "Signup" [disabled]= "loginform.invalid" (click)="selectButton2()"> {{"signup" | translate}} </button>
+            </span>      
+
+    </form>
+    
+</div>
+
+
+
+
+
+

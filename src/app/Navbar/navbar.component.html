@@ -1,0 +1,42 @@
+
+    <mat-toolbar class = "Nav" >
+            <div fxHide.gt-sm>
+                <button mat-button (click)= "openNavigationBar()"><mat-icon>reorder</mat-icon></button>
+            </div>
+                <img class = "image" src= "assets/THD-Logo.png" alt = "image didnt show" width = "300" /> 
+            <div fxFlex fxLayout fxLayoutAlign= "flex-end" fxHide.lt-md>
+                <mat-form-field>
+                    <mat-label class="mat-button"> {{'language' | translate}}</mat-label>
+                    <mat-select  (selectionChange) = "this.useLanguage($event.value)" class="mat-button">
+                    <mat-option   *ngFor= "let lang of languages" [value]= "lang"> {{lang}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div>
+                    <br>
+                    <a mat-button routerLink= "/"   >Home</a>
+                    <a mat-button routerLink= "/nachricht"  >{{"news" | translate}}</a>
+                    <a mat-button  routerLink= "/event"  > {{'events' | translate}} </a>
+                    <a mat-button routerLink= "/navig"  > {{'navigation' | translate}}</a> 
+                    <button mat-button routerLink= "/info"   > Info</button> 
+                    <a mat-button routerLink= "/login" *ngIf="!userIsAuthenticated"  ><mat-icon>person_outline</mat-icon>{{"login" | translate}} </a>
+                    <button mat-button *ngIf="userIsAuthenticated" (click)= "onLogout()"> <mat-icon>person_outline</mat-icon>{{"logout" | translate}}</button>
+                    
+                </div>
+            </div>
+            
+        
+        
+    </mat-toolbar>
+    <mat-menu  #submenu ="matMenu"> 
+        <a mat-menu-item  class="mat-button" routerLink= "/news" target="_blank" > Exam Rooms </a>
+        <a mat-menu-item class="mat-button"  routerLink= "/news" target="_blank" > Free Rooms </a>
+        <a mat-menu-item class="mat-button"  routerLink= "/news" target="_blank" > MENSA </a>
+        <a mat-menu-item class="mat-button"  routerLink= "/news" target="_blank" > LECTURE PLAN </a>
+    </mat-menu>
+    
+    
+
+    
+    
+
+    

@@ -1,0 +1,1524 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>my-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">my-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>FreeRoomComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/info/freeRoom/freeRoom.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>a component for showing lectures occuring in a specific room at a certain time/date</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-free-room</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./freeRoom.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./freeRoom.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#chosenDate">chosenDate</a>
+                            </li>
+                            <li>
+                                <a href="#chosenDateTime">chosenDateTime</a>
+                            </li>
+                            <li>
+                                <a href="#chosenID">chosenID</a>
+                            </li>
+                            <li>
+                                <a href="#chosenTime">chosenTime</a>
+                            </li>
+                            <li>
+                                <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#ID">ID</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#lecturesService">lecturesService</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#time">time</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#filter">filter</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#printdata">printdata</a>
+                            </li>
+                            <li>
+                                <a href="#setDate">setDate</a>
+                            </li>
+                            <li>
+                                <a href="#setID">setID</a>
+                            </li>
+                            <li>
+                                <a href="#setTime">setTime</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(lecturesService: <a href="../injectables/HttpService.html">HttpService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>lecturesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HttpService.html" target="_self" >HttpService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>a get HTTP service for fetching lecture Model JSON objects from mongoDB</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filter"></a>
+                    <span class="name">
+                        <b>
+                            filter
+                        </b>
+                        <a href="#filter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filter(filterValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A method for filtering the table</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterValue</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the input that is filled in the form field (filter text field)</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>after the component views have been fully initialized, the paginator is set </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>empty ngOnInit</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="printdata"></a>
+                    <span class="name">
+                        <b>
+                            printdata
+                        </b>
+                        <a href="#printdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>printdata(id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, dateTime: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>on component initilization a get HTTP request is performed </p>
+<p>it fetches lecture model Json objects from mongoDB</p>
+<p>mat table data is filled with data after a time out of 1500 milli seconds, so that get HTTP request has finished fetching the JSON objects  </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>room ID returned after invoking setID method</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>dateTime</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the concatenated chosenDateTime variable after setDate/ setTime method have been invoked</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setDate"></a>
+                    <span class="name">
+                        <b>
+                            setDate
+                        </b>
+                        <a href="#setDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setDate(date: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>storing the selected date in chosenDate variable</p>
+<p>concatenating selected date in the chosenDateTime variable</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>selected date from the form</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setID"></a>
+                    <span class="name">
+                        <b>
+                            setID
+                        </b>
+                        <a href="#setID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setID(x: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>storing the selected room ID in chosenID variable </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>x</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>selected room ID from the form </p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTime"></a>
+                    <span class="name">
+                        <b>
+                            setTime
+                        </b>
+                        <a href="#setTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setTime(x: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>storing the selected time slot in chosenTime variable</p>
+<p>concatenating selected time slot in the chosenDateTime variable</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>x</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>selected time slot from the form</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="chosenDate"></a>
+                        <span class="name">
+                            <b>
+                            chosenDate</b>
+                            <a href="#chosenDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;Any Any 00 0000 00:00:00 GMT+0000 (Eastern European Standard Time)&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>a variable in which the selected date is stored in </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="chosenDateTime"></a>
+                        <span class="name">
+                            <b>
+                            chosenDateTime</b>
+                            <a href="#chosenDateTime"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>a variable in which chosen date and time are concatenated together </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="chosenID"></a>
+                        <span class="name">
+                            <b>
+                            chosenID</b>
+                            <a href="#chosenID"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>a variable in which the selected room ID is stored in </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="chosenTime"></a>
+                        <span class="name">
+                            <b>
+                            chosenTime</b>
+                            <a href="#chosenTime"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;00:00&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>a variable in which the selected time slot is stored in </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSource"></a>
+                        <span class="name">
+                            <b>
+                            dataSource</b>
+                            <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new MatTableDataSource&lt;Lecture&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>instantiating a mat table data source with Lectures Models as parameters</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;description&#x27;,&#x27;organiser&#x27;,&#x27;participants&#x27;,&#x27;startDateTime&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>specifying which properties of the Lecture model I would like to show in the table</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ID"></a>
+                        <span class="name">
+                            <b>
+                            ID</b>
+                            <a href="#ID"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;, &#x27;5&#x27;, &#x27;6&#x27;, &#x27;7&#x27;, &#x27;8&#x27;, &#x27;9&#x27;, &#x27;10&#x27; ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>a list of room ids that a user can select in the form, to be used in the HTML template</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lecturesService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            lecturesService</b>
+                            <a href="#lecturesService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/HttpService.html" target="_self" >HttpService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">a get HTTP service for fetching lecture Model JSON objects from mongoDB</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator</b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="time"></a>
+                        <span class="name">
+                            <b>
+                            time</b>
+                            <a href="#time"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;08:00&#x27;, &#x27;09:00&#x27;, &#x27;10:00&#x27;, &#x27;11:00&#x27;, &#x27;12:00&#x27;, &#x27;13:00&#x27;, &#x27;14:00&#x27;, &#x27;15:00&#x27;, &#x27;16:00&#x27;, &#x27;17:00&#x27; ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/info/freeRoom/freeRoom.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>a list of time slots that a user can select in the form, to be used in the HTML template</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { AfterViewInit, Component, OnInit , ViewChild} from &#x27;@angular/core&#x27;;
+import { Lecture } from &#x27;./lectureModel&#x27;;
+import { HttpService } from &#x27;./http.service&#x27;;
+import { MatTableDataSource} from &#x27;@angular/material/table&#x27;;
+import { MatPaginator } from &#x27;@angular/material/paginator&#x27;;
+/**
+ * a component for showing lectures occuring in a specific room at a certain time/date
+ */
+@Component({
+  selector: &#x27;app-free-room&#x27;,
+  templateUrl: &#x27;./freeRoom.component.html&#x27;,
+  styleUrls: [&#x27;./freeRoom.component.scss&#x27;]
+})
+
+export class FreeRoomComponent implements OnInit, AfterViewInit {
+ 
+  @ViewChild(MatPaginator) paginator : MatPaginator;
+  /**
+   * instantiating a mat table data source with Lectures Models as parameters
+   */
+ dataSource &#x3D; new MatTableDataSource&lt;Lecture&gt;();   
+ /**
+   * specifying which properties of the Lecture model I would like to show in the table
+   */
+ displayedColumns &#x3D; [&#x27;description&#x27;,&#x27;organiser&#x27;,&#x27;participants&#x27;,&#x27;startDateTime&#x27;];  
+ /**
+  * a list of room ids that a user can select in the form, to be used in the HTML template
+  */
+ ID &#x3D; [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;, &#x27;5&#x27;, &#x27;6&#x27;, &#x27;7&#x27;, &#x27;8&#x27;, &#x27;9&#x27;, &#x27;10&#x27; ];
+ /**
+  * a list of time slots that a user can select in the form, to be used in the HTML template
+  */
+ time &#x3D; [&#x27;08:00&#x27;, &#x27;09:00&#x27;, &#x27;10:00&#x27;, &#x27;11:00&#x27;, &#x27;12:00&#x27;, &#x27;13:00&#x27;, &#x27;14:00&#x27;, &#x27;15:00&#x27;, &#x27;16:00&#x27;, &#x27;17:00&#x27; ];
+ /**
+  * a variable in which the selected room ID is stored in 
+  */
+ chosenID :string;
+ /**
+  * a variable in which the selected time slot is stored in 
+  */
+ chosenTime&#x3D; &quot;00:00&quot;;
+ /**
+  * a variable in which the selected date is stored in 
+  */
+ chosenDate&#x3D; &quot;Any Any 00 0000 00:00:00 GMT+0000 (Eastern European Standard Time)&quot;;
+ /**
+  * a variable in which chosen date and time are concatenated together 
+  */
+ chosenDateTime;
+ /**
+  * Constructor
+  * @param lecturesService a get HTTP service for fetching lecture Model JSON objects from mongoDB
+  */
+
+  constructor( public lecturesService : HttpService) { }
+ 
+    /**
+     * empty ngOnInit
+     */
+    ngOnInit() { }
+    /**
+      * after the component views have been fully initialized, the paginator is set 
+    */
+    ngAfterViewInit() {
+      this.dataSource.paginator &#x3D; this.paginator;
+    }
+    /**
+    * on component initilization a get HTTP request is performed 
+    * 
+    * it fetches lecture model Json objects from mongoDB
+    * 
+    * mat table data is filled with data after a time out of 1500 milli seconds, so that get HTTP request has finished fetching the JSON objects  
+     * @param id room ID returned after invoking setID method
+     * @param dateTime the concatenated chosenDateTime variable after setDate/ setTime method have been invoked
+     */
+    printdata(id: any, dateTime: any) {
+      this.lecturesService.getLectureInfoFromServer(id, dateTime);
+      setTimeout(() &#x3D;&gt; {this.dataSource.data &#x3D; this.lecturesService.lectures}, 1500);
+    }
+    /**
+      * A method for filtering the table
+      * @param filterValue the input that is filled in the form field (filter text field)
+    */
+    filter( filterValue : string) {
+      this.dataSource.filter &#x3D; filterValue.trim().toLowerCase();
+    }
+
+    /**
+     * storing the selected room ID in chosenID variable 
+     * @param x selected room ID from the form 
+     */
+    setID(x : string) {
+      this.chosenID &#x3D; x;
+      console.log(&quot;Room ID&quot;, this.chosenID);
+    }
+    /**
+     * storing the selected time slot in chosenTime variable
+     * 
+     * concatenating selected time slot in the chosenDateTime variable
+     * @param x selected time slot from the form
+     */
+    setTime(x : any) {
+      this.chosenTime &#x3D; x;
+      console.log(&quot;Time&quot;, this.chosenTime);
+      this.chosenDateTime&#x3D; this.chosenDate.substring(0,10) + &quot; &quot; + this.chosenTime.substring(0,5);
+      console.log(&quot;Calling API with this Date/Time&quot;, this.chosenDateTime);
+    }
+    /**
+     * storing the selected date in chosenDate variable
+     * 
+     * concatenating selected date in the chosenDateTime variable
+     * @param date selected date from the form
+     */
+    setDate(date: any) {
+      // takes the time zone difference into account
+      const temp&#x3D;  new Date(date.getTime()+ Math.abs(date.getTimezoneOffset()*60000) ) ;
+      this.chosenDate&#x3D; temp.toISOString();
+      this.chosenDateTime&#x3D; this.chosenDate.substring(0,10)+ &quot; &quot; + this.chosenTime.substring(0,5);
+      console.log(&quot;Calling API with this Date/Time&quot;, this.chosenDateTime);
+    }
+
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+    &lt;div class &#x3D; &quot;container&quot;&gt;
+        &lt;form ngForm #loginform&#x3D;&quot;ngForm&quot;  (ngSubmit)&#x3D;&quot;printdata(this.chosenID, this.chosenDateTime)&quot;&gt;
+            &lt;span class &#x3D;&quot;resizeField&quot;&gt;
+                &lt;mat-form-field appearance &#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label class&#x3D;&quot;mat-button&quot;&gt; {{&quot;freeRoom-page-room-id&quot; | translate}}&lt;/mat-label&gt;
+                    &lt;mat-select  required (selectionChange) &#x3D; &quot;this.setID($event.value)&quot;class&#x3D;&quot;mat-button&quot; #errorID&#x3D; &quot;ngModel&quot; ngModel name&#x3D;&quot;chosenID&quot; &gt;
+                    &lt;mat-option   *ngFor&#x3D; &quot;let id of ID&quot; [value]&#x3D; &quot;id&quot;&gt; {{id}} &lt;/mat-option&gt;
+                    &lt;/mat-select&gt;
+                &lt;/mat-form-field&gt;
+
+                &lt;mat-form-field  appearance &#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label class&#x3D;&quot;mat-button&quot;&gt; {{&quot;freeRoom-page-time&quot; | translate}}&lt;/mat-label&gt;
+                    &lt;mat-select   required (selectionChange) &#x3D; &quot;this.setTime($event.value)&quot;class&#x3D;&quot;mat-button&quot; #errorTime&#x3D; &quot;ngModel&quot; ngModel  name&#x3D;&quot;chosenTime&quot;&gt;
+                    &lt;mat-option   *ngFor&#x3D; &quot;let timeSlot of time&quot; [value]&#x3D; &quot;timeSlot&quot;&gt; {{timeSlot}} &lt;/mat-option&gt;
+                    &lt;/mat-select&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/span&gt;
+            &lt;span class&#x3D; &quot;resizeDateField&quot;&gt;
+                &lt;mat-form-field   class &#x3D;&quot;date&quot;  appearance&#x3D;&quot;outline&quot;&gt;
+                    
+                    &lt;input placeholder&#x3D;&quot;{{&#x27;freeRoom-page-date-picker&#x27; | translate}}&quot;  required (dateChange) &#x3D;&quot;this.setDate($event.value)&quot; matInput [matDatepicker]&#x3D; &quot;myDatePicker&quot;   #errorDate&#x3D; &quot;ngModel&quot; ngModel name&#x3D;&quot;chosenDate&quot;&gt;
+                        &lt;mat-datepicker-toggle [for]&#x3D;&quot;myDatePicker&quot; matSuffix&gt; &lt;mat-icon matDatepickerToggleIcon&gt;keyboard_arrow_down&lt;/mat-icon&gt;&lt;/mat-datepicker-toggle&gt;
+                        &lt;mat-datepicker #myDatePicker&gt;&lt;/mat-datepicker&gt;
+
+                &lt;/mat-form-field&gt;
+            &lt;/span&gt;
+            &lt;div class&#x3D; &quot;center&quot;&gt;
+                &lt;button  mat-raised-button color &#x3D; &quot;accent&quot; type&#x3D;&quot;submit&quot;  [disabled]&#x3D; &quot;loginform.invalid&quot; &gt; {{&quot;freeRoom-page-search-button&quot; | translate}}&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+   
+        
+        &lt;div&gt;
+            &lt;table mat-table  [dataSource]&#x3D; &quot;dataSource&quot; class&#x3D;&quot;mat-elevation-z8&quot; &gt;
+                &lt;ng-container matColumnDef &#x3D; &quot;description&quot;&gt;
+                    &lt;th mat-header-cell *matHeaderCellDef mat-sort-header [style.color]&#x3D;&quot;&#x27;white&#x27;&quot;&gt; {{&quot;freeRoom-table-description&quot; | translate}}&lt;/th&gt;
+                    &lt;td mat-cell *matCellDef &#x3D; &quot; let element&quot; [style.color]&#x3D;&quot;&#x27;white&#x27;&quot;&gt; {{ element.description }}&lt;/td&gt;  
+                &lt;/ng-container&gt;
+                &lt;ng-container matColumnDef &#x3D; &quot;organiser&quot;&gt;
+                    &lt;th mat-header-cell *matHeaderCellDef [style.color]&#x3D;&quot;&#x27;white&#x27;&quot;&gt;{{&quot;freeRoom-table-organiser&quot; | translate}}&lt;/th&gt;
+                    &lt;td mat-cell *matCellDef &#x3D; &quot; let element&quot; [style.color]&#x3D;&quot;&#x27;white&#x27;&quot;&gt; {{ element.organiser}}&lt;/td&gt;   
+                &lt;/ng-container&gt;
+                &lt;ng-container matColumnDef &#x3D; &quot;startDateTime&quot;&gt;
+                    &lt;th mat-header-cell *matHeaderCellDef [style.color]&#x3D;&quot;&#x27;white&#x27;&quot;&gt;{{&quot;freeRoom-table-startDateTime&quot; | translate}}&lt;/th&gt;
+                    &lt;td mat-cell *matCellDef &#x3D; &quot; let element&quot; [style.color]&#x3D;&quot;&#x27;white&#x27;&quot;&gt; {{ element.startDateTime}}&lt;/td&gt;  
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef &#x3D; &quot;participants&quot;&gt;
+                    &lt;th mat-header-cell *matHeaderCellDef [style.color]&#x3D;&quot;&#x27;white&#x27;&quot;&gt;{{&quot;freeRoom-table-participants&quot; | translate}}&lt;/th&gt;
+                    &lt;td mat-cell *matCellDef &#x3D; &quot; let element&quot; [style.color]&#x3D;&quot;&#x27;white&#x27;&quot;&gt; {{ element.participants}}&lt;/td&gt;     
+                &lt;/ng-container&gt;
+        
+                &lt;tr mat-header-row *matHeaderRowDef &#x3D; &quot;displayedColumns&quot; [ngClass]&#x3D;&quot;{colorwarn:displayedColumns}&quot;&gt;&lt;/tr&gt;
+                &lt;tr mat-row *matRowDef &#x3D; &quot;let Row; columns: displayedColumns;&quot; [ngClass]&#x3D;&quot;{colorprimary:Row}&quot;&gt;&lt;/tr&gt;       
+            &lt;/table&gt;
+
+            &lt;mat-paginator [pageSize] &#x3D; &quot;4&quot; [pageSizeOptions]&#x3D; &quot;[5, 8]&quot;&gt;
+
+            &lt;/mat-paginator&gt;
+        &lt;/div&gt;
+        
+                        
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./freeRoom.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">table {
+    width: 90%;
+    margin-left:5%;
+    margin-right:5%;
+   
+  }
+
+  .container {
+
+    display:flex;
+    justify-content: center;
+    //font-size: 5px;
+    
+  }
+
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #009fe3;
+}
+
+  
+
+  .date {
+    margin-top: 17px; 
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+
+button {
+
+  margin-bottom: 10px;
+  color: white !important;
+  
+  
+}
+
+mat-form-field {
+
+  width : 200px;
+  margin: 20px;
+  
+}
+
+
+  @import &#x27;./src/my-theme.scss&#x27;;
+  @import &#x27;~@angular/material/theming&#x27;;
+  
+  @mixin corporateIdTextColor($theme) {
+      $config: mat-get-color-config($theme);
+      $myprimary: map-get($config, primary);
+      $myaccent: map-get($config, accent);
+      $mywarn: map-get($config, warn);
+      mat-paginator{
+          color: mat-color($mywarn);
+      }
+  
+  }
+  div {
+       @include corporateIdTextColor($theme); 
+  }
+  
+  
+  
+  .colorprimary {
+      background-color: #009fe3;
+      
+  }
+  .colorwarn {
+      background-color: #1a4273;
+  }
+  
+  .resizeField {
+    font-size: 1px;
+  }
+
+  .resizeDateField {
+    font-size: 10px;
+  }
+
+ 
+
+
+  
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div>    <div class = "container">        <form ngForm #loginform="ngForm"  (ngSubmit)="printdata(this.chosenID, this.chosenDateTime)">            <span class ="resizeField">                <mat-form-field appearance ="outline">                    <mat-label class="mat-button"> {{"freeRoom-page-room-id" | translate}}</mat-label>                    <mat-select  required (selectionChange) = "this.setID($event.value)"class="mat-button" #errorID= "ngModel" ngModel name="chosenID" >                    <mat-option   *ngFor= "let id of ID" [value]= "id"> {{id}} </mat-option>                    </mat-select>                </mat-form-field>                <mat-form-field  appearance ="outline">                    <mat-label class="mat-button"> {{"freeRoom-page-time" | translate}}</mat-label>                    <mat-select   required (selectionChange) = "this.setTime($event.value)"class="mat-button" #errorTime= "ngModel" ngModel  name="chosenTime">                    <mat-option   *ngFor= "let timeSlot of time" [value]= "timeSlot"> {{timeSlot}} </mat-option>                    </mat-select>                </mat-form-field>            </span>            <span class= "resizeDateField">                <mat-form-field   class ="date"  appearance="outline">                                        <input placeholder="{{\'freeRoom-page-date-picker\' | translate}}"  required (dateChange) ="this.setDate($event.value)" matInput [matDatepicker]= "myDatePicker"   #errorDate= "ngModel" ngModel name="chosenDate">                        <mat-datepicker-toggle [for]="myDatePicker" matSuffix> <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></mat-datepicker-toggle>                        <mat-datepicker #myDatePicker></mat-datepicker>                </mat-form-field>            </span>            <div class= "center">                <button  mat-raised-button color = "accent" type="submit"  [disabled]= "loginform.invalid" > {{"freeRoom-page-search-button" | translate}}</button>            </div>        </form>    </div>                   <div>            <table mat-table  [dataSource]= "dataSource" class="mat-elevation-z8" >                <ng-container matColumnDef = "description">                    <th mat-header-cell *matHeaderCellDef mat-sort-header [style.color]="\'white\'"> {{"freeRoom-table-description" | translate}}</th>                    <td mat-cell *matCellDef = " let element" [style.color]="\'white\'"> {{ element.description }}</td>                  </ng-container>                <ng-container matColumnDef = "organiser">                    <th mat-header-cell *matHeaderCellDef [style.color]="\'white\'">{{"freeRoom-table-organiser" | translate}}</th>                    <td mat-cell *matCellDef = " let element" [style.color]="\'white\'"> {{ element.organiser}}</td>                   </ng-container>                <ng-container matColumnDef = "startDateTime">                    <th mat-header-cell *matHeaderCellDef [style.color]="\'white\'">{{"freeRoom-table-startDateTime" | translate}}</th>                    <td mat-cell *matCellDef = " let element" [style.color]="\'white\'"> {{ element.startDateTime}}</td>                  </ng-container>                <ng-container matColumnDef = "participants">                    <th mat-header-cell *matHeaderCellDef [style.color]="\'white\'">{{"freeRoom-table-participants" | translate}}</th>                    <td mat-cell *matCellDef = " let element" [style.color]="\'white\'"> {{ element.participants}}</td>                     </ng-container>                        <tr mat-header-row *matHeaderRowDef = "displayedColumns" [ngClass]="{colorwarn:displayedColumns}"></tr>                <tr mat-row *matRowDef = "let Row; columns: displayedColumns;" [ngClass]="{colorprimary:Row}"></tr>                   </table>            <mat-paginator [pageSize] = "4" [pageSizeOptions]= "[5, 8]">            </mat-paginator>        </div>                                                                                </div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BodyComponent', 'selector': 'app-body'},{'name': 'DialogComponent', 'selector': 'app-dialog'},{'name': 'EventsComponent', 'selector': 'app-events'},{'name': 'ExamsComponent', 'selector': 'app-exams'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FreeRoomComponent', 'selector': 'app-free-room'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LecturesPlanComponent', 'selector': 'app-lectures-plan'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MensaComponent', 'selector': 'app-mensa'},{'name': 'NachrichtenComponent', 'selector': 'app-nachrichten'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NavigationComponent', 'selector': 'app-navigation'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'FreeRoomComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FreeRoomComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

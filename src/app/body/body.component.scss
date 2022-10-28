@@ -1,0 +1,61 @@
+
+@import './src/my-theme.scss';
+@import '~@angular/material/theming';
+
+
+.four {
+    background-color: green;
+    Float: right;
+    width: 100px;
+    //height: 643px;
+}
+
+
+.five {
+    background-color: yellow;
+    Float: left;
+    width: 100px;
+   // height: 643px;
+}
+
+.six {
+    background-color: white;
+    overflow: hidden ;
+    //height: 1500px
+    
+}
+
+
+
+
+@mixin corporateIdTextColor($theme) {
+    $config: mat-get-color-config($theme);
+    $myprimary: map-get($config, primary);
+    $myaccent: map-get($config, accent);
+    $mywarn: map-get($config, warn);
+    mat-card-title, mat-card-content  {
+        color: mat-color($mywarn);
+    }
+}
+div {
+    @include corporateIdTextColor($theme);   
+}
+
+
+.img {
+
+    max-width: 400px;
+    max-height: 200px;
+}
+
+.card {
+    margin: 4px;
+    max-height: 470px;
+   
+}
+
+button.mat-raised-button{
+    color: white !important;
+  }  
+
+

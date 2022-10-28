@@ -1,0 +1,9 @@
+{
+
+    "/api/": {
+        "target" :"https://thabella.th-deg.de/thabella/opn" ,
+        "secure": false,
+        "changeOrigin": true
+    }
+    
+    }
